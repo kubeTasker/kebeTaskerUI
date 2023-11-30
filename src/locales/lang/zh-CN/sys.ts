@@ -154,7 +154,7 @@ export default {
     roleTitle: '角色',
     defaultRouter: '默认路由',
     admin: '管理员',
-    stuff: '员工',
+    stuff: '普通用户',
     seller: '销售',
     member: '会员',
     // action
@@ -219,7 +219,7 @@ export default {
     navigation: '快捷导航',
     info: '系统信息',
     // notification
-    welcome: '欢迎使用 Simple Admin',
+    welcome: '欢迎使用KubeTasker',
   },
   dictionary: {
     // noun

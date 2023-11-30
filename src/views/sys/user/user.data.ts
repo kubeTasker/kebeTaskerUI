@@ -119,18 +119,18 @@ export const searchFormSchema: FormSchema[] = [
 ];
 
 export const formSchema: FormSchema[] = [
-  {
-    field: 'avatar',
-    label: t('sys.user.avatar'),
-    defaultValue: '',
-    component: 'CropperAvatar',
-    show: true,
-    componentProps: {
-      uploadApi: uploadApi,
-      btnText: t('sys.user.changeAvatar'),
-      width: 100,
-    },
-  },
+  // {
+  //   field: 'avatar',
+  //   label: t('sys.user.avatar'),
+  //   defaultValue: '',
+  //   component: 'CropperAvatar',
+  //   show: true,
+  //   componentProps: {
+  //     uploadApi: uploadApi,
+  //     btnText: t('sys.user.changeAvatar'),
+  //     width: 100,
+  //   },
+  // },
   {
     field: 'id',
     label: 'ID',
@@ -200,41 +200,41 @@ export const formSchema: FormSchema[] = [
       valueField: 'id',
     },
   },
-  {
-    field: 'departmentId',
-    label: t('sys.department.userDepartment'),
-    component: 'ApiTreeSelect',
-    required: true,
-    componentProps: {
-      api: getDepartmentList,
-      params: {
-        page: 1,
-        pageSize: 1000,
-        name: '',
-        leader: '',
-      },
-      resultField: 'data.data',
-      labelField: 'trans',
-      valueField: 'id',
-    },
-  },
-  {
-    field: 'positionId',
-    label: t('sys.position.userPosition'),
-    component: 'ApiMultipleSelect',
-    required: true,
-    componentProps: {
-      api: getPositionList,
-      params: {
-        page: 1,
-        pageSize: 1000,
-        name: '',
-      },
-      resultField: 'data.data',
-      labelField: 'trans',
-      valueField: 'id',
-    },
-  },
+  // {
+  //   field: 'departmentId',
+  //   label: t('sys.department.userDepartment'),
+  //   component: 'ApiTreeSelect',
+  //   required: true,
+  //   componentProps: {
+  //     api: getDepartmentList,
+  //     params: {
+  //       page: 1,
+  //       pageSize: 1000,
+  //       name: '',
+  //       leader: '',
+  //     },
+  //     resultField: 'data.data',
+  //     labelField: 'trans',
+  //     valueField: 'id',
+  //   },
+  // },
+  // {
+  //   field: 'positionId',
+  //   label: t('sys.position.userPosition'),
+  //   component: 'ApiMultipleSelect',
+  //   required: true,
+  //   componentProps: {
+  //     api: getPositionList,
+  //     params: {
+  //       page: 1,
+  //       pageSize: 1000,
+  //       name: '',
+  //     },
+  //     resultField: 'data.data',
+  //     labelField: 'trans',
+  //     valueField: 'id',
+  //   },
+  // },
   {
     field: 'status',
     label: t('common.status'),

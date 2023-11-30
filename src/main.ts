@@ -16,11 +16,18 @@ import { router, setupRouter } from '@/router';
 import { setupRouterGuard } from '@/router/guard';
 import { setupStore } from '@/store';
 
+import DAGBoard from '../plugin/index';
 import App from './App.vue';
-import Antd from "ant-design-vue";
+import Antd from 'ant-design-vue';
+import ElementPlus from 'element-plus';
+import 'element-plus/theme-chalk/index.css';
 
 async function bootstrap() {
   const app = createApp(App);
+
+  app.use(ElementPlus);
+  
+  app.use(DAGBoard);
 
   // configure antv
   app.use(Antd);
