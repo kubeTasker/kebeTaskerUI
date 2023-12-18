@@ -94,23 +94,23 @@
       </Button>
     </FormItem>
     <ARow class="enter-x" :gutter="5">
-      <ACol :md="8" :xs="24">
+      <!-- <ACol :md="8" :xs="24">
         <Button block @click="setLoginState(LoginStateEnum.QR_CODE)">
           {{ t('sys.login.qrSignInFormTitle') }}
         </Button>
-      </ACol>
-      <ACol :md="8" :xs="24">
+      </ACol> -->
+      <ACol :md="12" :xs="24">
         <Button block @click="setLoginState(LoginStateEnum.REGISTER)">
           {{ t('sys.login.registerButton') }}
         </Button>
       </ACol>
-      <ACol :md="8" :xs="24">
+      <ACol :md="12" :xs="24">
         <Button block @click="setLoginState(LoginStateEnum.RESET_PASSWORD)">
           {{ t('sys.login.forgetFormTitle') }}
         </Button>
       </ACol>
     </ARow>
-
+    
     <Divider class="enter-x">{{ t('sys.login.otherSignIn') }}</Divider>
 
     <div class="flex justify-evenly enter-x" :class="`${prefixCls}-sign-in-way`">
@@ -125,12 +125,11 @@
 <script lang="ts" setup>
   import { reactive, ref, unref, computed } from 'vue';
 
-  import { Form, Input, Row, Col, Button, Divider, RadioGroup, RadioButton } from 'ant-design-vue';
-  import { GithubFilled, GoogleCircleFilled } from '@ant-design/icons-vue';
+  import { Form, Input, Row, Col, Button, RadioGroup, RadioButton } from 'ant-design-vue';
   import LoginFormTitle from './LoginFormTitle.vue';
 
   import { useI18n } from '/@/hooks/web/useI18n';
-
+  import { GithubFilled, GoogleCircleFilled } from '@ant-design/icons-vue';
   import { useUserStore } from '/@/store/modules/user';
   import { LoginStateEnum, useLoginState, useFormRules, useFormValid } from './useLogin';
   import { useDesign } from '/@/hooks/web/useDesign';

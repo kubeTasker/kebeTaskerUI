@@ -66,8 +66,8 @@ export default {
     signUpFormTitle: '注册',
     forgetFormTitle: '重置密码',
 
-    signInTitle: '分布式后台管理系统',
-    signInDesc: '快速搭建强大的分布式系统',
+    signInTitle: '资源分配管理系统',
+    signInDesc: '基于k8s的资源分配管理系统',
     policy: '我同意xxx隐私政策',
     scanSign: `扫码后点击"确认"，即可完成登录`,
 
@@ -328,5 +328,20 @@ export default {
     addTaskLog: '添加任务日志',
     editTaskLog: '编辑任务日志',
     taskLogList: '任务日志列表',
+  },
+  process: {
+    id: '流程编号',
+    process: '显示流程',
+    name: '流程名称',
+    settime: '建立时间',
+    addprocess:'新建流程',
+    editprocess:'编辑流程信息',
+  },
+  project: {
+    id: '工程编号',
+    name: '工程名称',
+    startedAt: '开始时间',
+    addproject: '添加工程',
+    editproject: '编辑工程信息',
   },
 };

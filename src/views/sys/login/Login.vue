@@ -17,7 +17,7 @@
           <div class="my-auto">
             <img
               :alt="title"
-              src="../../../assets/images/login-page-bg-2.png"
+              src="../../../assets/images/logo.png"
               class="w-2/3 -mt-16 -enter-x"
             />
             <div class="mt-10 font-medium text-white -enter-x">
@@ -35,7 +35,6 @@
           >
             <LoginForm />
             <ForgetPasswordForm />
-            <QrCodeForm />
             <RegisterForm />
           </div>
         </div>
@@ -49,7 +48,6 @@
   import LoginForm from './LoginForm.vue';
   import ForgetPasswordForm from './ForgetPasswordForm.vue';
   import RegisterForm from './RegisterForm.vue';
-  import QrCodeForm from './QrCodeForm.vue';
   import { useGlobSetting } from '/@/hooks/setting';
   import { useI18n } from '/@/hooks/web/useI18n';
   import { useDesign } from '/@/hooks/web/useDesign';

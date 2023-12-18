@@ -1,6 +1,6 @@
 <template>
   <PageWrapper>
-    <BasicTable @register="registerTable">
+    <BasicTable v-bind="$attrs" @register="registerTable">
       <template #toolbar>
         <a-button type="primary" @click="handleCreate"> {{ t('sys.menu.addMenu') }} </a-button>
       </template>
@@ -99,6 +99,7 @@
         t,
         registerTable,
         registerDrawer,
+        openDrawer,
         handleCreate,
         handleEdit,
         handleDelete,
